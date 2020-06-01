@@ -756,7 +756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85006625}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -43.3}
+  m_LocalPosition: {x: 0, y: -0.7, z: -43.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2659274505361967822}
@@ -14659,7 +14659,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220286394}
-  m_LocalRotation: {x: 0.0034457664, y: 1.344241e-10, z: 4.631941e-13, w: -0.9999941}
+  m_LocalRotation: {x: -0.002738943, y: 1.3444418e-10, z: -3.6811328e-13, w: -0.9999963}
   m_LocalPosition: {x: 247, y: 143.5, z: -1703.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15388,7 +15388,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304542583}
-  m_LocalRotation: {x: 0.0034457664, y: 1.344241e-10, z: 4.631941e-13, w: -0.9999941}
+  m_LocalRotation: {x: -0.002738943, y: 1.3444418e-10, z: -3.6811328e-13, w: -0.9999963}
   m_LocalPosition: {x: 247, y: 143.5, z: -1703.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -27636,7 +27636,7 @@ MonoBehaviour:
   BoostForce: -100000
   thrustForce: -15000
   tiltForce: 10000
-  basicForce: -130000
+  basicForce: -120000
   maxVelocity: 150
   weaponOnAirplane: {fileID: 1350233033735452899}
 --- !u!54 &1350233033735452897
