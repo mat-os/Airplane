@@ -3,7 +3,6 @@ using UnityEngine;
 
 [RequireComponent(typeof(Airplane))]
 [RequireComponent(typeof(InputReader))]
-[RequireComponent(typeof(WeaponOnAirplane))]
 public class Player : MonoBehaviour
 {
     [SerializeField] private Airplane airplane;

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponOnAirplane : MonoBehaviour
+public class  WeaponOnAirplane : MonoBehaviour
 {
     //Место откуда стреляем
     [SerializeField] private Transform[] bulletSpawnPos;
