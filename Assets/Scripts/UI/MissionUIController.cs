@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class MissionUIController : MonoBehaviour
+public class MissionUIController : MonoBehaviourSingleton<MissionUIController>
 {
     [SerializeField] private TMP_Text enemyCounterText;
+    [SerializeField] private int totalEnemiesToKill = 4;
+    private int missionEnemyKilled;
     void Start()
     {
-        StatisticCollector.OnKillEvent += UpdateMission;
         UpdateMission();
     }
 
-    void UpdateMission()
+    public void UpdateMission()
     {
-        enemyCounterText.text = StatisticCollector.Instance.KilledEnemies.ToString() + " out of " + EnemyController.enemyList.Count.ToString();
+        enemyCounterText.text = missionEnemyKilled.ToString() + " out of " + totalEnemiesToKill.ToString();
+    }
+
+    public void AddKillToStatistic()
+    {
+        missionEnemyKilled++;
+        UpdateMission();
     }
 }

@@ -18,8 +18,8 @@ public class SpeedometrUIController : MonoBehaviour
     private void ChangeValue(float speedValue)
     {
         float amount = (speedValue / 100) * 180 / 360;
+        amount = Mathf.Clamp(amount, 0, 0.7f);
         speedBar.fillAmount = amount;
-        
         if (amount > 0.5f)
         {
             speedBar.DOColor(Color.red, 1f);

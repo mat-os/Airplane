@@ -33,7 +33,7 @@ public class TargetIndicatorController : MonoBehaviour
         }
     }
     
-    private void Update()
+    private void LateUpdate()
     {
         if (EnemyController.enemyList.Count > 0)
         {

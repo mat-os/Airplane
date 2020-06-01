@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class SceneEventHolder : MonoBehaviour
+public class SceneEventHolder : MonoBehaviourSingleton<SceneEventHolder>
     {
         public void LoadSceen(int sceenNumber)
         {
